@@ -1,0 +1,14 @@
+{
+  "main": "index.js",
+  "scripts": {
+    "serve": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.0.12",
+    "vitedge": "^0.13.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^2.1.0"
+  }
+}

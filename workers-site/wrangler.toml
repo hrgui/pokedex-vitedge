@@ -1,0 +1,10 @@
+name = "pokedex-vitedge"
+type = "webpack"
+account_id = "<ACCOUNT_ID>"
+workers_dev = true
+route = ""
+webpack_config = "webpack.config.js"
+
+[env.react.site]
+bucket = "../dist/client"
+entry-point = "workers-site"
