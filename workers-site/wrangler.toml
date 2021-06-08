@@ -5,6 +5,6 @@ workers_dev = true
 route = ""
 webpack_config = "webpack.config.js"
 
-[env.react.site]
+[site]
 bucket = "../dist/client"
-entry-point = "workers-site"
+entry-point = "."
