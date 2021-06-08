@@ -16,11 +16,15 @@ const Pokedex = ({ params = {}, isLoadingProps, isRevalidatingProps }: Props) =>
   return (
     <div>
       <Helmet>
-        <html lang="en" />
         <meta charSet="utf-8" />
-        <title>
-          {params.name} #{params.id}
-        </title>
+        <title>{`${params.name} #${params.id}`}</title>
+        <meta name="twitter:card" content="summary" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content={params.name} />
+        <meta
+          property="og:image"
+          content={params.sprites.other["official-artwork"]["front_default"]}
+        />
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <img src={params.sprites.other["official-artwork"].front_default} alt={params.id} />

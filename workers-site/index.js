@@ -1,6 +1,7 @@
 import { handleEvent } from "vitedge/worker";
 
 addEventListener("fetch", (event) => {
+  console.log(event.request.url);
   try {
     event.respondWith(
       handleEvent(event, {
